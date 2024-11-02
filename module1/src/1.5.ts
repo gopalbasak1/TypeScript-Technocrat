@@ -1,6 +1,6 @@
 //Reference Type -->
 
-//jodi kon property na thaka ar jodi taba optional chain use kora hoba ('?')
+//jodi kon property na thaka ar jodi toba optional chain use kora hoba ('?')
 const user: {
     company: 'Programming Hero'; //type ---> literal types (kono property fixed jonno literal types use korta hoba)
 

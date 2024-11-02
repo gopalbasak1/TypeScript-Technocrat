@@ -15,6 +15,7 @@ searchName(null)
     
     
  // unknown typeof
+ //unknown is a similar of any, but safer alternative to any.
 const getSpeedInMeterPerSecond =(value:unknown) => {
 
     if(typeof value === 'number'){
