@@ -1,53 +1,48 @@
 {
-//
+  //
 
-//union types
+  //union types
 
-// type FrontendDeveloper = 'fakibazDeveloper' | 'juniorDeveloper';
+  // type FrontendDeveloper = 'fakibazDeveloper' | 'juniorDeveloper'; //aeta ka bola string literal type
 
-// type FullstackDeveloper = 'frontendDeveloper' | 'fullstackDeveloper'
+  // type FullstackDeveloper = 'frontendDeveloper' | 'fullstackDeveloper'
 
-// type Developer = FrontendDeveloper | FullstackDeveloper
+  // type Developer = FrontendDeveloper | FullstackDeveloper
 
-// const newDeveloper : FrontendDeveloper = 'juniorDeveloper';
+  // const newDeveloper : FrontendDeveloper = 'juniorDeveloper';
 
+  // type User = {
+  //     name: string;
+  //     email?: string;
+  //     gender: "male"| "female";
+  //     bloodGroup: "O+"|"A+"|"AB+"
+  // }
 
-// type User = {
-//     name: string;
-//     email?: string;
-//     gender: "male"| "female";
-//     bloodGroup: "O+"|"A+"|"AB+"
-// }
+  // const user1: User = {
+  //     name: 'gopal',
+  //     gender: 'male',
+  //     bloodGroup: 'A+'
+  // }
 
-// const user1: User = {
-//     name: 'gopal',
-//     gender: 'male',
-//     bloodGroup: 'A+'
-// }
+  //intersection types
 
-
-type FrontendDeveloper = {
+  type FrontendDeveloper = {
     skills: string[];
-    designation1: 'Frontend Developer'
-}
+    designation1: "Frontend Developer";
+  };
 
-type BackendDeveloper = {
+  type BackendDeveloper = {
     skills: string[];
-    designation2: 'Backend Developer'
-}
+    designation2: "Backend Developer";
+  };
 
-type FullstackDeveloper = FrontendDeveloper & BackendDeveloper
+  type FullstackDeveloper = FrontendDeveloper & BackendDeveloper;
 
-const fullstackDeveloper : FullstackDeveloper={
-    skills: ['HTML', 'CSS', 'EXPRESS'],
-    designation1: 'Frontend Developer',
-    designation2: 'Backend Developer'
-}
+  const fullstackDeveloper: FullstackDeveloper = {
+    skills: ["HTML", "CSS", "EXPRESS"],
+    designation1: "Frontend Developer",
+    designation2: "Backend Developer",
+  };
 
-
-
-
-
-
-//
+  //
 }
